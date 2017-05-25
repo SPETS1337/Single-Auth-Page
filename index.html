@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title></title>
+
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="Single Auth Page is an one-page sign in & registration page.">
+	    <meta name="author" content="Spets">
+
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+		
+		<!-- Left side (Sign in) -->
+		<div class="box signin col-md-6">
+
+			<div class="header">
+				<h3>Sign in</h3>
+			</div>
+			
+			<div class="boxes">
+
+				<form action="#" method="POST">
+
+					<label>Username</label><br>
+					<input type="text" name="username" required><br>
+
+					<label>Password</label><br>
+					<input type="password" name="password" required><br>
+
+					<button class="gen-btn">Sign into my Account</button><br>
+
+					<div class="fp-label"> <a href="#">Forgot your password?</a> </div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+
+		<!-- Right side (Registration) -->
+		<div class="box register col-md-6">
+
+			<div class="header">
+				<h3>Create an account</h3>
+			</div>
+
+			<div class="boxes">
+
+				<form action="#" method="POST">
+
+					<label>Username</label><br>
+					<input type="text" name="username" required><br>
+
+					<label>Email address</label><br>
+					<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required><br>
+
+					<label>Password (at least 6 characters)</label><br>
+					<input type="password" name="password" pattern=".{6,}" required><br>
+
+					<label>Confirm your password</label><br>
+					<input type="password" name="passwordcf" pattern=".{6,}" required><br>
+
+					<button class="gen-btn">Create my Account</button><br>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
